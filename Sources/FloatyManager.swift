@@ -52,6 +52,26 @@ open class FloatyManager: NSObject {
         }
     }
     
+    private var _font = UIFont()
+    open var font: UIFont {
+        get {
+            return _font
+        }
+        set {
+            _font = newValue
+        }
+    }
+    
+    private var _rtlMode = false
+    open var rtlMode: Bool {
+        get {
+            return _rtlMode
+        }
+        set{
+            _rtlMode = newValue
+        }
+    }
+    
     open func show(_ animated: Bool = true) {
         if animated == true {
             floatyWindow.isHidden = false

@@ -13,16 +13,23 @@ Floaty is simple floating action button for iOS. (formerly KCFloatingActionButto
 ## Preview
 <img src="https://github.com/kciter/Floaty/raw/master/Images/preview.gif" width='187' alt="Preview gif">
 
+## Support
+If you like this open source, you can sponsor it. :smile:
+```
+Litecoin: LZSFLGDLe1pBxQB7v54kEcobYnu1uAR9U6
+Bitcoin: 1Hrauu2sPczma53gpYU4Y2kap5Hi6K3Ma3
+```
+
 ## Requirements
 * iOS 9.0+
-* Swift 3.0
+* Swift 3.0+
 * Xcode 8
 
 ## Installation
 ### CocoaPods
 ```ruby
 use_frameworks!
-pod "Floaty", "~> 3.0.0"
+pod "Floaty", "~> 3.0.0" # Use version 4.0.0 for Swift 4.0
 ```
 ### Carthage
 ```ruby
@@ -81,6 +88,17 @@ item.title = "Custom item"
 Floaty.global.button.addItem(item: item)
 ```
 <img src="https://github.com/kciter/Floaty/raw/master/Images/custom_item.png" width='187' alt="Use custom item">
+
+
+### RTL Support
+You can use the `rtlMode` property to mirror the Floaty Button for rtl languages.
+```swift
+Floaty.global.rtlMode = true
+```
+<img src="https://github.com/divgunsingh/Floaty/raw/master/Images/rtl_enabled.png" width='187' alt="Rtl Enabled">
+<img src="https://github.com/divgunsingh/Floaty/raw/master/Images/rtl_disabled.png" width='187' alt="Rtl Disabled">
+
+
 
 ### Sticky
 You can use the `sticky` property.
